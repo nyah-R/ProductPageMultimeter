@@ -1,0 +1,468 @@
+/*-------------------------------------------
+  1. RESET Y SELECTORES GENERALES
+-------------------------------------------*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --fondoColor: rgb(7, 38, 58);
+  --fuenteTitulos: "Bebas Neue", sans-serif;
+  --fuenteSubTitulos: "Arial", sans-serif;
+  --fuenteTextos: "Inter", sans-serif;
+  --colorSections: rgb(136, 136, 136);
+  --colorHover: rgb(212, 139, 3);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*-------------------------------------------
+  2. ESTRUCTURA GENERAL: HEADER, NAV, FOOTER
+-------------------------------------------*/
+
+header,
+footer {
+  height: 80px;
+  background-color: var(--fondoColor);
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  min-width: 320px;
+}
+
+
+
+header ul {
+  gap: 10px;
+  list-style: none;
+  display: flex;
+}
+
+header ul li a {
+  display: block;
+}
+
+header img {
+  height: 70px;
+}
+
+footer img {
+  height: 50px;
+  margin-top: 10px;
+  margin-left: 25px;
+}
+
+/* Contenedor interno del footer */
+#abajo {
+  justify-content: space-between;
+}
+
+/*-------------------------------------------
+  3. CLASES UTILITARIAS Y REUTILIZABLES
+-------------------------------------------*/
+
+/* Tipografía general */
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h1,
+h2{
+  text-transform: uppercase;
+  font-family: var(--fuenteTitulos);
+  font-weight: 400;
+}
+
+p {
+  margin: 10px 0;
+  padding: 10px 0;
+}
+
+h1 {
+  font-size: 45px;
+  margin-bottom: 15px;
+}
+
+h3,
+p,
+li,
+.boton,
+figcaption,
+form {
+  font-family: var(--fuenteSubTitulos);
+}
+
+form {
+  font-weight: 550;
+}
+
+
+/* Clases de utilidad */
+
+.flex {
+  display: flex;
+}
+
+.columna {
+  flex-direction: column;
+  display: flex;
+}
+
+.alMedio {
+  text-align: center;
+}
+
+.precio {
+  font-size: 40px;
+  font-family: var(--fuenteTitulos);
+}
+
+.fondoColor {
+  background-color: var(--colorSections);
+  padding: 20px;
+}
+
+.contenedorMayor {
+  max-width: 1280px;
+  width: 80%;
+  min-width: 800px;
+  margin: 0 auto;
+
+}
+
+.boton,
+nav ul li a {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 550;
+}
+
+.espacioGap {
+  gap: 20px;
+}
+
+/* Botón y enlaces */
+
+.boton {
+  display: inline-block;
+  background-color: orange;
+  border-radius: 5px;
+  margin-top: auto;
+}
+
+/* Pseudoclases y los pseudoelementos */
+
+.boton:hover {
+  background-color: rgb(212, 139, 3);
+  transition: all 0.2s;
+}
+
+input[type="submit"]:hover {
+  background-color: rgb(212, 139, 3);
+  transition: all 0.2s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  background-color: rgb(254, 242, 218);
+  outline: none;
+}
+
+input::placeholder {
+  font-style: italic;
+}
+
+header ul li a:hover {
+  border-top: 2px white solid;
+}
+
+#caracteristicas article a:hover {
+  color: blueviolet;
+}
+
+tr:nth-child(even) {
+  background-color: #f0f7f5;
+}
+
+tr:nth-child(odd) {
+  background-color: #eacb30;
+}
+
+tr:first-child {
+  background-color: #81c4b4;
+}
+
+/*-------------------------------------------
+  4. SECCIÓN UNO: PRODUCTO NUEVO
+-------------------------------------------*/
+
+#inicio {
+  background-image: url(img/inicio.png);
+  height: 353px;
+  align-items: center;
+}
+
+.cuarenta {
+  width: 40%;
+}
+
+/*-------------------------------------------
+  5. SECCIÓN DOS: CARACTERÍSTICAS
+-------------------------------------------*/
+
+.multifila {
+  flex-wrap: wrap;
+}
+
+.treinta {
+  width: calc(40% - 10px);
+}
+
+.setenta {
+  width: calc(60% - 10px);
+}
+
+.cien {
+  width: 100%;
+}
+
+#caracteristicas {
+  margin-bottom: 20px;
+}
+
+#caracteristicas article {
+  border-radius: 10px;
+  padding: 20px;
+
+}
+
+#caracteristicas article a {
+  display: block;
+  margin-top: auto;
+  color: rgb(37, 43, 131);
+}
+
+
+#colorUno {
+  background-color: #81c4b4;
+}
+
+#colorDos {
+  background-color: rgb(168, 208, 223);
+}
+
+#colorTres {
+  background-color: #ead730;
+}
+
+#colorCuatro {
+  background-color: #efab66;
+}
+
+
+/*-------------------------------------------
+  6. SECCIÓN TRES: PROMOCIONES
+-------------------------------------------*/
+
+#promociones li {
+  list-style: inside;
+  list-style-image: url(img/logo.svg);
+}
+
+#promociones ul {
+  margin: 15px 0;
+}
+
+#promos article {
+  border-radius: 5px;
+  background-color: white;
+  padding: 15px;
+  margin-bottom: 5px;
+}
+
+#promociones article a {
+  margin-top: auto;
+}
+
+#promociones .boton {
+  width: 100%;
+  margin-top: auto;
+  display: block;
+}
+
+/*-------------------------------------------
+  7. SECCIÓN CUATRO: GALERÍA
+-------------------------------------------*/
+
+#galeria {
+  height: 20%;
+  min-width: 900px;
+}
+
+#galeria div {
+  justify-content: center;
+}
+
+#galeria h3,
+figcaption,
+section {
+  padding: 10px;
+}
+
+#galeria article {
+  width: calc(100% / 3 - 20px);
+  border: 1px solid grey;
+  border-radius: 10px;
+  margin-bottom: 2%;
+
+}
+
+#galeria p {
+  margin: 5px 15px;
+}
+
+#galeria article img {
+  width: 100%;
+  height: calc(100% - 30px);
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+article figcaption {
+  font-size: 12px;
+  color: gray;
+}
+
+article figure {
+  height: 300px;
+}
+
+#imgManual img {
+  object-position: bottom;
+}
+
+#botonDelMedio {
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+  max-width: 200px;
+}
+
+
+/*-------------------------------------------
+  8. SECCIÓN CINCO: PRE-VENTA (FORMULARIO + TABLA)
+-------------------------------------------*/
+
+#tablaYform {
+  justify-content: space-between;
+  height: 20%;
+}
+
+
+#selectYcant {
+  justify-content: space-between;
+  padding: 5px 0;
+
+}
+
+form div {
+  display: block;
+}
+
+
+
+form label {
+  display: block;
+  margin: 5px;
+}
+
+form input,
+form select {
+  height: 35px;
+  border-radius: 5px;
+  border-style: none;
+  padding: 0 10px;
+}
+
+fieldset {
+  border-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+form input,
+form div,
+form textarea {
+  width: 100%;
+  padding: 5px auto;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+}
+
+#checkBoxYlabel {
+  justify-content: right;
+  display: inline-flex;
+}
+
+form textarea {
+  height: 90px;
+  border-radius: 5px;
+  border-style: none;
+  resize: none;
+  padding: 5px;
+}
+
+
+table {
+  border-collapse: collapse;
+  margin-top: 5%;
+}
+
+th,
+td {
+  width: calc(100% / 5);
+  padding: 8px;
+  text-align: center;
+  font-family: var(--fuenteSubTitulos);
+
+}
+
+#enviarKit {
+  width: 20%;
+  display: block;
+  margin-left: auto;
+}
+
+.izquierda {
+  width: calc(100% / 2);
+  min-width: 400px;
+}
+
+.derecha {
+  width: calc(100% / 2);
+  margin-left: auto;
+  align-content: center;
+  margin: 3% 0;
+}
+
+.sinContenedor {
+  min-width: 700px;
+}
