@@ -17,16 +17,17 @@ Landing page desarrollada como obligatorio del curso de **Diseño de Interfaces 
 - Imágenes optimizadas en carpeta `/img`
 
 ## 📂 Estructura del proyecto
-
-📁 nr100-landing-page
+/
 ├── index.html
-├── estilos.css
-├── preview.png
-└── img/
-    ├── portada.jpg
-    ├── producto.png
-    ├── promo1.png
-    └── promo2.png
+├── css/
+│   └── styles.css
+├── img/
+│   ├── nr100-1.jpg
+│   ├── nr100-2.jpg
+│   ├── nr100-3.jpg
+│   └── ...
+└── README.md
+
 
 
 ## 🚀 Cómo visualizar el proyecto
