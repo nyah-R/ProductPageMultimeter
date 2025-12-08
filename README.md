@@ -1,38 +1,41 @@
 # NR-100 Smart Multimeter – Landing Page
 
-Landing page desarrollada como obligatorio del curso de **Diseño de Interfaces Web** (primer semestre – Analista en TI). El proyecto presenta el multímetro NR-100, con foco en estructura semántica, diseño responsive y buenas prácticas de HTML5 y CSS3.
+Landing page desarrollada como obligatorio del curso de Diseño de Interfaces Web.
+El proyecto presenta el multímetro NR-100, enfocándose en estructura semántica, diseño responsive y buenas prácticas de HTML5 y CSS3.
 
 ![Preview del sitio](./preview.png)
 
 ---
 
-## 🧩 Características del proyecto
+## 🧩 Tecnologías utilizadas
 
-- Maquetación completa con **HTML5 semántico**
-- Estilos responsivos en **CSS3**
-- Fuentes importadas desde Google Fonts (Bebas Neue e Inter)
-- Secciones: Inicio, Características, Promociones, Galería y Pre-venta
-- Formulario con validaciones nativas de HTML
-- Tabla comparativa accesible
-- Imágenes optimizadas en carpeta `/img`
+HTML5 con estructura semántica
+CSS3
+Google Fonts (Bebas Neue, Inter)
+Diseño responsive mobile-first
 
-## 📂 Estructura del proyecto
+## 🧭 Contenido del sitio
+
+Hero con presentación del multímetro
+Características destacadas
+Galería de imágenes optimizadas
+Tabla comparativa accesible
+Formulario de contacto con validaciones nativas
+Footer con navegación semántica
+
+
+## 🗂 Estructura del proyecto
+
+```text
 /
 ├── index.html
 ├── css/
-│   └── styles.css
+│   └── estilos.css
 ├── img/
 │   ├── nr100-1.jpg
 │   ├── nr100-2.jpg
 │   ├── nr100-3.jpg
 │   └── ...
+├── preview.png
 └── README.md
-
-
-
-## 🚀 Cómo visualizar el proyecto
-
-1. Cloná el repositorio:  
-   ```bash
-   git clone https://github.com/tu-usuario/nr100-landing-page.git
-2. Abrí index.html en cualquier navegador.
+```
