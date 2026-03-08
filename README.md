@@ -1,41 +1,69 @@
-# NR-100 Smart Multimeter – Landing Page
+# NR-100 Smart Multimeter – Product Landing Page
 
-Landing page desarrollada como obligatorio del curso de Diseño de Interfaces Web.
-El proyecto presenta el multímetro NR-100, enfocándose en estructura semántica, diseño responsive y buenas prácticas de HTML5 y CSS3.
+Landing page developed as a course assignment for **Web Interface Design**.
 
-![Preview del sitio](./preview.png)
+The project presents the **NR-100 Smart Multimeter**, focusing on semantic HTML structure, responsive design, and modern CSS practices.
 
 ---
 
-## 🧩 Tecnologías utilizadas
+## Live Demo
 
-HTML5 con estructura semántica
-CSS3
-Google Fonts (Bebas Neue, Inter)
-Diseño responsive mobile-first
+You can view the deployed page here:    **https://nyah-r.github.io/NR100-product-page/**
 
-## 🧭 Contenido del sitio
+---
 
-Hero con presentación del multímetro
-Características destacadas
-Galería de imágenes optimizadas
-Tabla comparativa accesible
-Formulario de contacto con validaciones nativas
-Footer con navegación semántica
+## Preview
 
+![Website Preview](preview.png)
 
-## 🗂 Estructura del proyecto
+---
 
-```text
-/
+## Technologies
+
+- **HTML5** (semantic markup)
+- **CSS3**
+- **Google Fonts**
+  - Bebas Neue
+  - Inter
+- **Mobile-first responsive design**
+
+---
+
+## Features
+
+- Product hero section introducing the NR-100 multimeter  
+- Product description and key highlights  
+- Image gallery with optimized assets  
+- Accessible comparison table  
+- Contact form with native HTML validation  
+- Footer with semantic navigation and social media links  
+
+---
+
+## Project Structure
+
+```
+NR100-product-page
+│
 ├── index.html
-├── css/
+├── css
 │   └── estilos.css
-├── img/
-│   ├── nr100-1.jpg
-│   ├── nr100-2.jpg
-│   ├── nr100-3.jpg
-│   └── ...
-├── preview.png
+│
+├── img
+│ ├── facebook.png
+│ ├── instagram.png
+│ ├── youtube.png
+│ ├── logo.svg
+│ ├── logoCompleto.png
+│ ├── multimetro.png
+│ ├── multimetroSet.jpg
+│ ├── protector.jpg
+│ ├── puntasMultimetro.jpg
+│ └── inicio.png
+│
 └── README.md
 ```
+
+## Notes
+
+This project was created for educational purposes as part of a **Web Interface Design course assignment**.
