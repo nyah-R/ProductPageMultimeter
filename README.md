@@ -6,12 +6,6 @@ The project presents the **NR-100 Smart Multimeter**, focusing on semantic HTML 
 
 ---
 
-## Live Demo
-
-You can view the deployed page here:    **https://nyah-r.github.io/NR100-product-page/**
-
----
-
 ## Preview
 
 ![Website Preview](preview.png)
@@ -23,8 +17,6 @@ You can view the deployed page here:    **https://nyah-r.github.io/NR100-product
 - **HTML5** (semantic markup)
 - **CSS3**
 - **Google Fonts**
-  - Bebas Neue
-  - Inter
 - **Mobile-first responsive design**
 
 ---
